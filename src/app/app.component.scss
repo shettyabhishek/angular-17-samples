@@ -1,0 +1,27 @@
+.header-toolbar{background-color:burlywood;}
+.toolbar-spacer {flex: 1 1 auto;}
+
+.sidenav-container {
+  width: 100%;
+  height: 100%;
+  .drawer {background-color: #f0f0f0;border-radius: 0;padding: 20px;width: 200px;
+    .side-nav-items{cursor: pointer;}
+  }
+  mat-drawer-content{overflow: hidden;}
+  .sidenav-content {align-items: start;display: block;height: 100%;justify-content: start;overflow: auto;padding-left: 10px;}
+}
+
+.app-container{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 10px;
+  .container-header{background-color: cadetblue;font-size: .9em;color: #ffffff;padding: 5px 10px;}
+  .main-content{
+    .section-one,.section-two{
+      border: 1px solid #dedede;display: inline-block;font-size: .9rem;
+      width: calc(50% - 12px);padding: 5px;
+    }
+  }
+}
+

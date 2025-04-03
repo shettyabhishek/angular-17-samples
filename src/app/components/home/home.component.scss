@@ -1,0 +1,10 @@
+.home-container{
+  border: 1px solid #dedede;margin: 10px;padding: 10px;
+  .sub-container{
+    margin-bottom: 10px;margin-top: 3px;
+  }
+  .section-container{
+    border-top: 1px solid #dedede;
+    display: inline-block; vertical-align:top; width: 47%;padding: 10px 0;padding-left: 29px;
+  }
+}

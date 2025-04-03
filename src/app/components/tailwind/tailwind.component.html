@@ -1,0 +1,25 @@
+
+<!--mat-toolbar color="primary">
+  <mat-nav-list class="list-horizontal">
+    <mat-list-item>
+      <a [routerLink]="['colors']" routerLinkActive="router-link-active" >Color Classes</a>
+    </mat-list-item>
+    <mat-list-item>
+      <a>Spacing Classes</a>
+    </mat-list-item>
+  </mat-nav-list>
+</mat-toolbar-->
+<div class="tailwind-components">
+  <mat-list class="list-horizontal bg-[#9A0000]">
+    <mat-list-item routerLinkActive="active"><a class="text-gray-300 pt-2 pl-2" [routerLink]="['colorsCls']">Color</a></mat-list-item>
+    <mat-list-item routerLinkActive="active"><a class="text-gray-300 pt-2 pl-2" routerLink="spacingCls">Spacing</a></mat-list-item>
+    <mat-list-item routerLinkActive="active"><a class="text-gray-300 pt-2 pl-2" routerLink="typography">Typography</a></mat-list-item>
+    <mat-list-item routerLinkActive="active"><a class="text-gray-300 pt-2 pl-2" routerLink="sizing">Sizing</a></mat-list-item>
+    <mat-list-item routerLinkActive="active"><a class="text-gray-300 pt-2 pl-2" routerLink="borders">Borders</a></mat-list-item>
+    <mat-list-item routerLinkActive="active"><a class="text-gray-300 pt-2 pl-2" routerLink="responsive">Coumns-View</a></mat-list-item>
+    <mat-list-item routerLinkActive="active"><a class="text-gray-300 pt-2 pl-2" routerLink="flexView">Flex-View</a></mat-list-item>
+    <mat-list-item routerLinkActive="active"><a class="text-gray-300 pt-2 pl-2" routerLink="gridView">Grid-View</a></mat-list-item>
+  </mat-list>
+</div>
+<router-outlet></router-outlet>
+

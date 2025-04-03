@@ -1,0 +1,27 @@
+<div class="container mx-auto p-3 text-sm responsive">
+  <div class="text-slate-700 p-2 mt-1 border rounded-sm">
+    <h3 class="text-lg bg-gray-200 px-2 py-1">Grid Layouting</h3>
+    <div class="text-md pl-2 py-2">Like flex box classes in tailwind, we also have grid classes that help in creating grid layout (max of 12 grid columns). The columns in this are created with equal width. But the widths of the columns can be adjusted using column and row span classes.
+    Below are some of the points highlighted in the sample implementation
+      <ul class="ml-10 list-disc">
+        <li>Grid created is of 3 columns</li>
+        <li>All the items arranged are of equal width</li>
+        <li>Added a small gap between each item (gap-1)</li>
+        <li>The first item spans across 2 columns using a class col-span-2</li>
+        <li>The third item spans across 2 rows using a class row-span-2</li>
+        <li>Made the grid responsive, for small device defined a single column layout</li>
+      </ul>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+      <div class="p-10 bg-slate-100 border border-slate-400 md:col-span-2">01</div>
+      <div class="p-10 bg-slate-100 border border-slate-400">02</div>
+      <div class="p-10 bg-slate-100 border border-slate-400 md:row-span-2">03</div>
+      <div class="p-10 bg-slate-100 border border-slate-400">04</div>
+      <div class="p-10 bg-slate-100 border border-slate-400">05</div>
+      <div class="p-10 bg-slate-100 border border-slate-400">06</div>
+      <div class="p-10 bg-slate-100 border border-slate-400">07</div>
+      <div class="p-10 bg-slate-100 border border-slate-400">08</div>
+      <div class="p-10 bg-slate-100 border border-slate-400">09</div>
+    </div>
+  </div>
+</div>
