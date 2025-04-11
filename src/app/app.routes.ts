@@ -25,7 +25,7 @@ export const routes: Routes = [
           { path: 'prcGrid', loadComponent: () => import('./components/tailwind/tlwcomps/customLib/comps/pricing-grids/pricing-grids.component').then((c) => c.PricingGridsComponent)  },
           { path: 'prdModl', loadComponent:() => import('./components/tailwind/tlwcomps/customLib/comps/prduct-modal/prduct-modal.component').then((c)=> c.PrductModalComponent)},
           { path: 'imgGal', loadComponent: () => import('./components/tailwind/tlwcomps/customLib/comps/image-gallery/image-gallery.component').then((c)=> c.ImageGalleryComponent)},
-          { path: 'lgnWind', loadComponent: () => import('./components/tailwind/tlwcomps/customLib/comps/image-gallery/image-gallery.component').then((c)=> c.ImageGalleryComponent)}
+          { path: 'lgnWind', loadComponent: () => import('./components/tailwind/tlwcomps/customLib/comps/login-wind/login-wind.component').then((c)=> c.LoginWindComponent)}
         ]
       }
     ]
