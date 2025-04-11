@@ -16,7 +16,18 @@ export const routes: Routes = [
       { path: 'borders', loadComponent: () => import('./components/tailwind/tlwcomps/borders/borders.component').then((c) => c.BordersComponent)  },
       { path: 'responsive', loadComponent: () => import('./components/tailwind/tlwcomps/responsive/responsive.component').then((c) => c.ResponsiveComponent)  },
       { path: 'flexView', loadComponent: () => import('./components/tailwind/tlwcomps/flexview/flexview.component').then((c)=> c.FlexviewComponent)},
-      { path: 'gridView', loadComponent: () => import('./components/tailwind/tlwcomps/gridview/gridview.component').then((c)=>c.GridviewComponent)}
+      { path: 'gridView', loadComponent: () => import('./components/tailwind/tlwcomps/gridview/gridview.component').then((c)=>c.GridviewComponent)},
+      {
+        path: 'libComponents', loadComponent: () => import('./components/tailwind/tlwcomps/customLib/lib.component').then((c)=>c.LibComponent),
+        'children':[
+          { path: '', pathMatch: 'full', redirectTo: 'emlSubsCrd' },
+          { path: 'emlSubsCrd', loadComponent: () => import('./components/tailwind/tlwcomps/customLib/comps/email-subscribe/email-subscribe.component').then((c) => c.EmailSubscribeComponent)  },
+          { path: 'prcGrid', loadComponent: () => import('./components/tailwind/tlwcomps/customLib/comps/pricing-grids/pricing-grids.component').then((c) => c.PricingGridsComponent)  },
+          { path: 'prdModl', loadComponent:() => import('./components/tailwind/tlwcomps/customLib/comps/prduct-modal/prduct-modal.component').then((c)=> c.PrductModalComponent)},
+          { path: 'imgGal', loadComponent: () => import('./components/tailwind/tlwcomps/customLib/comps/image-gallery/image-gallery.component').then((c)=> c.ImageGalleryComponent)},
+          { path: 'lgnWind', loadComponent: () => import('./components/tailwind/tlwcomps/customLib/comps/image-gallery/image-gallery.component').then((c)=> c.ImageGalleryComponent)}
+        ]
+      }
     ]
   },
 ];

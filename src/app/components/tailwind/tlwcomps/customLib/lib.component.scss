@@ -1,0 +1,11 @@
+.tailwind-custom-components{
+
+}
+mat-list.list-horizontal {border-radius: 5px;padding: 0;margin-top: 10px;
+  mat-list-item {
+    cursor: pointer;display: inline-block;height: auto;padding: 5px 5px;width: auto;
+    a{display: inline-block;
+      .active{color: beige;background-color: burlywood;padding: 4px;}
+    }
+  }
+}

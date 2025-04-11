@@ -1,0 +1,19 @@
+.checkmark {
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dashoffset: 0;
+  position: relative;
+  margin-right: 2px;
+  &.amber{
+    stroke: oklch(76.9% 0.188 70.08);
+  }
+  &.orange{
+    stroke: oklch(55.3% 0.195 38.402);
+  }
+  &.green{
+    stroke: oklch(52.7% 0.154 150.069);
+  }
+}
+

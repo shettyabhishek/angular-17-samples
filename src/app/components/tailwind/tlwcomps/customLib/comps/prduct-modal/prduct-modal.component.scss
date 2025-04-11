@@ -1,0 +1,18 @@
+.checkmark {
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dashoffset: 0;
+  position: relative;
+  margin-right: 2px;
+  &.red{
+    stroke: oklch(98.5% 0.001 106.423);
+  }
+  left: -1px;
+}
+
+.golden-star{
+  stroke: oklch(87.9% 0.169 91.605);
+  fill: oklch(87.9% 0.169 91.605);
+}
