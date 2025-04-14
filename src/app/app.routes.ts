@@ -27,6 +27,14 @@ export const routes: Routes = [
           { path: 'imgGal', loadComponent: () => import('./components/tailwind/tlwcomps/customLib/comps/image-gallery/image-gallery.component').then((c)=> c.ImageGalleryComponent)},
           { path: 'lgnWind', loadComponent: () => import('./components/tailwind/tlwcomps/customLib/comps/login-wind/login-wind.component').then((c)=> c.LoginWindComponent)}
         ]
+      },{
+        path:'smplWebPgs',loadComponent : () => import('./components/tailwind/tlwcomps/smpl-web-pgs/smpl-web-pgs.component').then((pg) => pg.SmplWebPgsComponent),
+        children: [
+          { path: '', pathMatch: 'full', redirectTo: 'smplOne' },
+          {
+            path: 'smplOne', loadComponent: () => import('./components/tailwind/tlwcomps/smpl-web-pgs/sample-one/sample-one.component').then((smpl) => smpl.SampleOneComponent)
+          }
+        ]
       }
     ]
   },
