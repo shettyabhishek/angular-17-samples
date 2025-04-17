@@ -33,6 +33,8 @@ export const routes: Routes = [
           { path: '', pathMatch: 'full', redirectTo: 'smplOne' },
           {
             path: 'smplOne', loadComponent: () => import('./components/tailwind/tlwcomps/smpl-web-pgs/sample-one/sample-one.component').then((smpl) => smpl.SampleOneComponent)
+          },{
+            path: 'smplTwo', loadComponent: () => import('./components/tailwind/tlwcomps/smpl-web-pgs/sample-two/sample-two.component').then(smplTwo => smplTwo.SampleTwoComponent)
           }
         ]
       }

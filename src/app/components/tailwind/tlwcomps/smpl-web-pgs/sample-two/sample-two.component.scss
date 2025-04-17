@@ -1,0 +1,23 @@
+.smpl-two-wbpg{
+  //background-image: url('https://tse4.mm.bing.net/th?id=OIP.1RcxG-kbRJ5-rdTKkzc5twHaEK&pid=Api&P=0&h=180');
+  background-image: url('https://images.hdqwalls.com/download/toyota-gr-supra-mkv-final-edition-4k-ap-1366x768.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-2{
+  background-image: url('https://tse1.mm.bing.net/th?id=OIP.SnE1omBFwgXc0WWgAXyHkAHaEK&pid=Api&P=0&h=180');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  .smpl-two-wbpg{
+    background-image: url('https://images.hdqwalls.com/download/toyota-gr-supra-mkv-final-edition-4k-ap-1366x768.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .section-2{
+    background-size: 100%;
+  }
+}

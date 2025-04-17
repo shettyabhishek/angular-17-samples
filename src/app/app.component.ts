@@ -9,6 +9,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import { MyTest } from './classes/my-test';
 
 
 @Component({
@@ -18,6 +19,12 @@ import {MatListModule} from '@angular/material/list';
   imports:[CommonModule,RouterOutlet,MatToolbarModule, MatButtonModule, MatIconModule,MatSidenavModule,MatListModule,RouterLink]
 })
 
-export class AppComponent{
+export class AppComponent implements OnInit{
   showFiller = true;
+
+  ngOnInit():void {
+    //Instantiating a class that uses a sample decorator called myDecorator
+    const myTestClass:MyTest = new MyTest();
+    console.log("@@@@@@@@@@@@@@@@@@@@@@@@@ some data from the decorator ",myTestClass)
+  }
 }

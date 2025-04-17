@@ -38,3 +38,18 @@ body { margin: 0; font-family: Verdana, Geneva, Tahoma, sans-serif;}
 .button-container{
   @apply flex flex-col md:flex-row md:justify-center mt-8 space-y-2 md:space-y-0;
 }
+
+/*Hamburger icon*/
+.hamburger{cursor: pointer;height: 24px;width: 24px;position: relative;transition: all 0.25s;
+  .hamburger-top,.hamburger-middle,.hamburger-bottom{
+    background-color: #fff;height: 2px;left: 0;position: absolute;transform: rotate(0);transition: all 0.5s;top: 0;width: 24px;
+  }
+  .hamburger-middle{transform: translateY(7px);}
+  .hamburger-bottom{transform: translateY(14px);}
+  &.open{
+    transform: rotate(90deg);
+    .hamburger-top{transform: rotate(45deg) translateY(6px) translateX(6px);}
+    .hamburger-middle{display: none;}
+    .hamburger-bottom{transform: rotate(-45deg) translateY(6px) translateX(-6px);}
+  }
+}
