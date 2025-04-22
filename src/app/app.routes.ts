@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { TailwindComponent } from './components/tailwind/tailwind.component';
 import { HomeComponent } from './components/home/home.component';
+import { SampleThreeComponent } from './components/tailwind/tlwcomps/smpl-web-pgs/sample-three/sample-three.component';
 
 export const routes: Routes = [
   {'path':'',redirectTo: 'home', pathMatch: 'full'},
@@ -35,6 +36,8 @@ export const routes: Routes = [
             path: 'smplOne', loadComponent: () => import('./components/tailwind/tlwcomps/smpl-web-pgs/sample-one/sample-one.component').then((smpl) => smpl.SampleOneComponent)
           },{
             path: 'smplTwo', loadComponent: () => import('./components/tailwind/tlwcomps/smpl-web-pgs/sample-two/sample-two.component').then(smplTwo => smplTwo.SampleTwoComponent)
+          }, {
+            path: 'smplThree', loadComponent: () => import('./components/tailwind/tlwcomps/smpl-web-pgs/sample-three/sample-three.component').then(smplThree => smplThree.SampleThreeComponent)
           }
         ]
       }
