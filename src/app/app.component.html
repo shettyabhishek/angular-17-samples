@@ -2,7 +2,7 @@
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon (click)="drawer.toggle()">menu</mat-icon>
   </button>
-  <span>iLearn !!</span>
+  <span class="text-md font-webpg">iLearn !!</span>
   <span class="toolbar-spacer"></span>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
@@ -23,8 +23,15 @@
       Toggle extra text
     </button-->
     <mat-list role="list">
-      <mat-list-item role="listitem" routerLink="/" class="side-nav-items">Home</mat-list-item>
-      <mat-list-item role="listitem" routerLink="/tailwind" class="side-nav-items">TailWind Classes</mat-list-item>
+      <mat-list-item role="listitem" routerLink="/" class="side-nav-items">
+        <span class="text-md font-webpg">Home</span>
+      </mat-list-item>
+      <mat-list-item role="listitem" routerLink="/tailwind" class="side-nav-items ">
+        <span class="text-md font-webpg">TailWind Classes</span>
+      </mat-list-item>
+      <mat-list-item role="listitem" routerLink="/anglFtrs" class="side-nav-items text-xs">
+        <span class="text-md font-webpg">Angular Featuers</span>
+      </mat-list-item>
       <!--mat-list-item role="listitem">Item 3</mat-list-item-->
     </mat-list>
 
