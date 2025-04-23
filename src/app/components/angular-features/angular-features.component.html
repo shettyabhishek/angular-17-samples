@@ -1,0 +1,137 @@
+<div class="relative">
+  <div class="border-1 border-slate-300 m-3 grid grid-cols-1 md:grid-cols-4 p-1 font-primary gap-1">
+
+    <div class="border-1 border-slate-400 rounded-md p-2">
+      <div class="text-md font-bold pb-2">&#64;for - template annotation</div>
+      <div class="text-sm">The &#64;for block repeatedly renders content of a block for each item in a collection.The value of the track expression determines a key used to associate array items with the views in the DOM. This also supports $index, $first, $last, $count, $even and $odd.
+        <div class="border-1 border-slate-200 bg-slate-100 p-2 my-1">
+          <strong>When the items are available in the list </strong>
+          <ul>
+            @for(myitem of items;track $index;let first = $first;let last = $last;let even = $even;let odd = $odd;){
+              <li [class.text-red-700]="first" [class.text-green-700]="last" [class.text-blue-700]="odd">
+                {{$index+1}}. {{myitem}}
+              </li>
+            }
+          </ul>
+        </div>
+        <div class="border-1 border-slate-200 bg-slate-100 p-2 my-1">
+          <strong>When the list is empty &#64;empty block can be used to show a default block</strong>
+          <ul>
+            @for(itm of noItemsArray;track $index){
+              <li>{{$index+1}}. {{itm}}</li>
+            } @empty {
+              <li> No items available for display </li>
+            }
+          </ul>
+        </div>
+        <div class="text-right mt-2">
+          <button class="rounded-lg bg-purple-400 py-1 px-2 text-white hover:cursor-pointer hover:bg-purple-600 relative" (click)="showHidePopUp('forAnnot')">Show Code Snippet</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-1 border-slate-400 rounded-md p-2">
+      <div class="text-md font-bold pb-2">&#64;if, &#64;else if, &#64;else - template annotation</div>
+      <div class="text-sm">The &#64;if block conditionally displays its content when its condition expression is truthy. With latest versions of Angular &#64;else if & &#64;else are also available.
+        <div class="border-1 border-slate-200 bg-slate-100 p-2 mt-3 my-1">
+          <strong>Select an option to view and understand if, else if & else block execution.</strong>
+          <div class="flex flex-row justify-center items-center space-x-2 my-2">
+            <div class="p-1">
+              <input type="radio" name="selectNumber" value="ifBlock" (change)="changeBlock = 'ifBlock'"/>
+              <span> 3 < 4</span>
+            </div>
+            <div class="p-1">
+              <input type="radio" name="selectNumber" value="elseIfBlock" (change)="changeBlock = 'elseIfBlock'"/>
+              <span> 5 > 4</span>
+            </div>
+            <div class="p-1">
+              <input type="radio" name="selectNumber" value="elseBlock" (change)="changeBlock = 'elseBlock'"/>
+              <span> 4 === 4</span>
+            </div>
+          </div>
+          Current value : {{changeBlock}}
+          @if(changeBlock === 'ifBlock'){
+            <div>If block executed</div>
+          } @else if(changeBlock === 'elseIfBlock'){
+            <div>Else If block executed</div>
+          } @else {
+            <div>Else block executed</div>
+          }
+        </div>
+      </div>
+      <div class="text-right mt-2">
+        <button class="rounded-lg bg-purple-400 py-1 px-2 text-white hover:cursor-pointer hover:bg-purple-600 relative" (click)="showHidePopUp('ifElseAnnot')">Show Code Snippet</button>
+      </div>
+    </div>
+
+    <div class="border-1 border-slate-400 rounded-md p-2">
+      <div class="text-md font-bold pb-2">&#64;switch  - template annotation</div>
+      <div class="text-sm">The &#64;switch block helps switching blocks on the case by case matching of condition.
+        <div class="border-1 border-slate-200 bg-slate-100 p-2 mt-3 my-1">
+          <strong>Select color option to view and understand switch control flow.</strong>
+          <div class="flex flex-row justify-center items-center space-x-2 my-2">
+            <div class="p-1">
+              <input type="radio" name="selectNumber" value="red" (change)="switchCondition = 'red'"/>
+              <span class="pl-1">Red</span>
+            </div>
+            <div class="p-1">
+              <input type="radio" name="selectNumber" value="green" (change)="switchCondition = 'green'"/>
+              <span class="pl-1">Green</span>
+            </div>
+            <div class="p-1">
+              <input type="radio" name="selectNumber" value="blue" (change)="switchCondition = 'blue'"/>
+              <span class="pl-1">Blue</span>
+            </div>
+          </div>
+          Current color selected : {{switchCondition}}
+          @switch(switchCondition){
+            @case('red'){
+              <div class="bg-red-700 text-white p-3"> Selected Color RED </div>
+            }
+            @case('green'){
+              <div class="bg-green-700 text-white p-3"> Selected Color GREEN </div>
+            }
+            @case('blue'){
+              <div class="bg-blue-700 text-white p-3"> Selected Color BLUE </div>
+            }
+            @default {
+              <div class="bg-slate-700 text-white p-3"> No color selected </div>
+            }
+          }
+        </div>
+      </div>
+      <div class="text-right mt-2">
+        <button class="rounded-lg bg-purple-400 py-1 px-2 text-white hover:cursor-pointer hover:bg-purple-600 relative" (click)="showHidePopUp('switchAnnot')">Show Code Snippet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Adding an overlay on showing code snippet -->
+  <div class="w-[100%] mx-auto border-1 border-slate-300 absolute -top-2 -left-1 -right-1 h-screen z-90 bg-slate-400 p-3 opacity-90" [class.hidden]="!showCodePreview"></div>
+
+  <div class="w-1/2 left-[25%] border-1 border-slate-300 absolute top-10 z-100 bg-white p-3" [class.hidden]="!showCodePreview">
+    <div class="text-1xl flex flex-row justify-between pb-2">
+      <span class="mb-2 inline-block">Code - Snippet</span>
+      <button class="rounded-full border-1 w-8 text-center hover: cursor-pointer" (click)="showHidePopUp('')">
+        <svg viewBox="0 -0.5 25 25" class="h-5 w-5 mx-auto" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z" fill="#000000"></path> </g></svg>
+      </button>
+    </div>
+
+    @switch(imgCodePreview){
+      @case('forAnnot') {
+        <img src="https://dmjgo93cthk6w.cloudfront.net/for_annotation.png" class="p-3 border-1"/>
+      }
+      @case('ifElseAnnot'){
+        <img src="https://dmjgo93cthk6w.cloudfront.net/if_elseif_else_annotation.png" class="p-3 border-1"/>
+      }
+      @case('switchAnnot'){
+        <img src="https://dmjgo93cthk6w.cloudfront.net/switch_annotation.png" class="p-3 border-1"/>
+      }
+      @default {
+
+      }
+    }
+
+  </div>
+
+</div>
