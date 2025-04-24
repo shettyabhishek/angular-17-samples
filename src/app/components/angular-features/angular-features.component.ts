@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { AlphaNumDirective } from './directives/alpha-num.directive';
 
 @Component({
   selector: 'app-angular-features',
-  imports: [CommonModule],
+  imports: [CommonModule,AlphaNumDirective],
   templateUrl: './angular-features.component.html',
   styleUrl: './angular-features.component.scss'
 })

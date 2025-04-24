@@ -104,6 +104,25 @@
         <button class="rounded-lg bg-purple-400 py-1 px-2 text-white hover:cursor-pointer hover:bg-purple-600 relative" (click)="showHidePopUp('switchAnnot')">Show Code Snippet</button>
       </div>
     </div>
+
+
+    <div class="border-1 border-slate-400 rounded-md p-2">
+      <div class="text-md font-bold pb-2">Alpha Numeric Directive</div>
+      <div class="text-sm">
+        <div class="py-2">
+          Implementing a simple directive that ensures the input textbox takes alpha numeric string<br/>
+          - The string should not contain more than 5 chars <br/>
+          - The string must and should atleast contain one alphabet and one number
+        </div>
+        <input type="text" class="p-2 border-1 border-slate-400 rounded-sm w-full" appAlphaNum/>
+        <div class="text-red-700 text-sm py-1 alpha-num-error" style="display: none;">This is not alpha numeric. Please check</div>
+      </div>
+      <div class="text-right mt-2">
+        <button class="rounded-lg bg-purple-400 py-1 px-2 text-white hover:cursor-pointer hover:bg-purple-600 relative" (click)="showHidePopUp('alphNum-drctv')">Show Code Snippet</button>
+      </div>
+    </div>
+
+
   </div>
 
   <!-- Adding an overlay on showing code snippet -->
@@ -126,6 +145,9 @@
       }
       @case('switchAnnot'){
         <img src="https://dmjgo93cthk6w.cloudfront.net/switch_annotation.png" class="p-3 border-1"/>
+      }
+      @case('alphNum-drctv'){
+        <img src="https://dmjgo93cthk6w.cloudfront.net/directive_sample.png" class="p-3 border-1"/>
       }
       @default {
 
