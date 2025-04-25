@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="implIntTitle" datatype="html">
+        <source>Implementing internationalization (i18n)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/angular-features/angular-features.component.html</context>
+          <context context-type="linenumber">125,126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3300176000435518558" datatype="html">
+        <source> An enterprise that decides to use IP addresses out of the address space defined in this document can do so without any coordination with IANA or an Internet registry. The address space can thus be used by many enterprises. Addresses within this private address space will only be unique within the enterprise, or the set of enterprises which choose to cooperate over this space so they may communicate with each other in their own private internet. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/angular-features/angular-features.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="798659529556138758" datatype="html">
+        <source> As before, any enterprise that needs globally unique address space is required to obtain such addresses from an Internet registry. An enterprise that requests IP addresses for its external connectivity will never be assigned addresses from the blocks defined above. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/angular-features/angular-features.component.html</context>
+          <context context-type="linenumber">132,135</context>
+        </context-group>
+        <note priority="1" from="description"> Description for test message</note>
+        <note priority="1" from="meaning">testMessage </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
