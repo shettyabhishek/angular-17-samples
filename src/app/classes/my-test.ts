@@ -4,7 +4,7 @@
 import { myDecorator } from "./mydecorator";
 
 @myDecorator({
-  name: 'My Tes Class',
+  name: 'My Test Class',
   type: 'Class',
   description: 'Testing with metadata',
   numId: 1234

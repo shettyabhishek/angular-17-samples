@@ -2,7 +2,14 @@
   <div class="border-1 border-slate-300 m-3 grid grid-cols-1 md:grid-cols-4 p-1 font-primary gap-1">
 
     <div class="border-1 border-slate-400 rounded-md p-2">
-      <div class="text-md font-bold pb-2">&#64;for - template annotation</div>
+      <div class="flex flex-row justify-between items-start">
+        <div class="text-md font-bold pb-2">&#64;for - template annotation</div>
+        <div class="text-right">
+          <button class="rounded-lg py-1 px-2 text-white hover:cursor-pointer relative" (click)="showHidePopUp('forAnnot')">
+            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M13.2942 7.17041L12.0001 12L10.706 16.8297" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+          </button>
+        </div>
+      </div>
       <div class="text-sm">The &#64;for block repeatedly renders content of a block for each item in a collection.The value of the track expression determines a key used to associate array items with the views in the DOM. This also supports $index, $first, $last, $count, $even and $odd.
         <div class="border-1 border-slate-200 bg-slate-100 p-2 my-1">
           <strong>When the items are available in the list </strong>
@@ -24,16 +31,18 @@
             }
           </ul>
         </div>
-        <div class="text-right mt-2">
-          <button class="rounded-lg py-1 px-2 text-white hover:cursor-pointer relative" (click)="showHidePopUp('forAnnot')">
-            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M13.2942 7.17041L12.0001 12L10.706 16.8297" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
-          </button>
-        </div>
       </div>
     </div>
 
     <div class="border-1 border-slate-400 rounded-md p-2">
-      <div class="text-md font-bold pb-2">&#64;if, &#64;else if, &#64;else - template annotation</div>
+      <div class="flex flex-row justify-between items-start">
+        <div class="text-md font-bold pb-2">&#64;if, &#64;else if, &#64;else - template annotation</div>
+        <div class="text-right">
+          <button class="rounded-lg py-1 px-2 text-white hover:cursor-pointer relative" (click)="showHidePopUp('ifElseAnnot')">
+            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M13.2942 7.17041L12.0001 12L10.706 16.8297" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+          </button>
+        </div>
+      </div>
       <div class="text-sm">The &#64;if block conditionally displays its content when its condition expression is truthy. With latest versions of Angular &#64;else if & &#64;else are also available.
         <div class="border-1 border-slate-200 bg-slate-100 p-2 mt-3 my-1">
           <strong>Select an option to view and understand if, else if & else block execution.</strong>
@@ -61,15 +70,17 @@
           }
         </div>
       </div>
-      <div class="text-right mt-2">
-        <button class="rounded-lg py-1 px-2 text-white hover:cursor-pointer relative" (click)="showHidePopUp('ifElseAnnot')">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M13.2942 7.17041L12.0001 12L10.706 16.8297" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
-        </button>
-      </div>
     </div>
 
     <div class="border-1 border-slate-400 rounded-md p-2">
-      <div class="text-md font-bold pb-2">&#64;switch  - template annotation</div>
+      <div class="flex flex-row justify-between items-start">
+        <div class="text-md font-bold pb-2">&#64;switch  - template annotation</div>
+        <div class="text-right">
+          <button class="rounded-lg py-1 px-2 text-white hover:cursor-pointer relative" (click)="showHidePopUp('switchAnnot')">
+            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M13.2942 7.17041L12.0001 12L10.706 16.8297" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+          </button>
+        </div>
+      </div>
       <div class="text-sm">The &#64;switch block helps switching blocks on the case by case matching of condition.
         <div class="border-1 border-slate-200 bg-slate-100 p-2 mt-3 my-1">
           <strong>Select color option to view and understand switch control flow.</strong>
@@ -104,15 +115,17 @@
           }
         </div>
       </div>
-      <div class="text-right mt-2">
-        <button class="rounded-lg py-1 px-2 text-white hover:cursor-pointer relative" (click)="showHidePopUp('switchAnnot')">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M13.2942 7.17041L12.0001 12L10.706 16.8297" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
-        </button>
-      </div>
     </div>
 
     <div class="border-1 border-slate-400 rounded-md p-2">
-      <div class="text-md font-bold pb-2">Alpha Numeric Directive</div>
+      <div class="flex flex-row justify-between items-start">
+        <div class="text-md font-bold pb-2">Alpha Numeric Directive</div>
+        <div class="text-right">
+          <button class="rounded-lg py-1 px-2 text-white hover:cursor-pointer relative" (click)="showHidePopUp('alphNum-drctv')">
+            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M13.2942 7.17041L12.0001 12L10.706 16.8297" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+          </button>
+        </div>
+      </div>
       <div class="text-sm">
         <div class="py-2">
           Implementing a simple directive that ensures the input textbox takes alpha numeric string<br/>
@@ -121,11 +134,6 @@
         </div>
         <input type="text" class="p-2 border-1 border-slate-400 rounded-sm w-full" appAlphaNum/>
         <div class="text-red-700 text-sm py-1 alpha-num-error" style="display: none;">This is not alpha numeric. Please check</div>
-      </div>
-      <div class="text-right mt-2">
-        <button class="rounded-lg py-1 px-2 text-white hover:cursor-pointer relative" (click)="showHidePopUp('alphNum-drctv')">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M13.2942 7.17041L12.0001 12L10.706 16.8297" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
-        </button>
       </div>
     </div>
 
@@ -144,7 +152,9 @@
     </div-->
 
     <div class="border-1 border-slate-400 rounded-md p-2">
-      <div class="text-md font-bold pb-2">&#64;defer block & &#64;placeholder</div>
+      <div class="flex flex-row justify-between items-start">
+        <div class="text-md font-bold pb-2">&#64;defer block & &#64;placeholder</div>
+      </div>
       <div class="text-sm">
         <div class="border-1 border-slate-200 bg-slate-100 p-2 my-1">
           @defer{
@@ -161,14 +171,16 @@
             </div>
           }
           @placeholder (minimum 5s){
-            <div> The place holder gets shown for a specific interval of time. </div>
+            <div class="text-purple-500"> The place holder gets shown for a specific interval of time. </div>
           }
         </div>
       </div>
     </div>
 
     <div class="border-1 border-slate-400 rounded-md p-2">
-      <div class="text-md font-bold pb-2">&#64;defer block & &#64;loading</div>
+      <div class="flex flex-row justify-between items-start">
+        <div class="text-md font-bold pb-2">&#64;defer block & &#64;loading</div>
+      </div>
       <div class="text-sm">
         <div class="border-1 border-slate-200 bg-slate-100 p-2 my-1">
           @defer{
@@ -190,38 +202,57 @@
       </div>
     </div>
 
-    <div class="border-1 border-slate-400 rounded-md p-2">
-      <div class="text-md font-bold pb-2">Signals</div>
-      <div class="text-sm">
-        <div class="my-2 border-1 border-slate-200 p-2 my-1 font-alata">
-          <h5 class="font-bold text-md mt-2">Sample for Signal implementation: </h5>
-          <div class="mt-2 inline-block mr-3">
-            <span class="text-slate-400">Counter Current Value : </span>
-            <span class="text-blue-400">{{counterSignal()}}</span>
-          </div>
-          <button class="rounded border-1 border-slate-200 p-1 px-2 bg-purple-300 hover:bg-purple-500 hover:cursor-pointer hover:text-white inline-block" (click)="increment()">Increment</button>
-          <div class="mt-2 inline-block mr-3">
-            <span class="text-slate-400">Current User :</span>
-            <span class="text-blue-400"> {{(this.translations().name)}} of age {{this.translations().age}}</span></div>
-          <button class="rounded border-1 border-slate-200 p-1 px-2 bg-purple-300 hover:bg-purple-500 hover:cursor-pointer hover:text-white inline-block" (click)="changeUser()">Update User</button>
-
-          <!--h5 class="font-bold text-md mt-2">Sample for Derived Signal implementation: </h5>
-          <div class="mt-2 inline-block mr-3">
-            <span class="text-slate-400">Counter Current Value : </span>
-            <span class="text-blue-400">{{derivedCounterSignal()}}</span>
-          </div-->
+    <div class="border-1 border-slate-400 rounded-md p-2 col-span-2">
+      <div class="flex flex-row justify-between items-start">
+        <div class="text-md font-bold pb-2">Signals</div>
+        <div class="text-right">
+          <button class="rounded-lg py-1 px-2 text-white hover:cursor-pointer relative" (click)="showHidePopUp('signals')">
+            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M13.2942 7.17041L12.0001 12L10.706 16.8297" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+          </button>
         </div>
-        <div class="border-1 border-slate-200 bg-slate-100 p-2 my-1">
-          <ul class="list-disc ml-5">
+      </div>
+      <div class="text-sm">
+        <div class="flex flex-col md:flex-row justify-center my-2 border-1 border-slate-200 p-2 my-1 font-alata space-x-2">
+          <div class="border-r-1 border-slate-300 pr-2 w-[50%]">
+            <h5 class="font-bold text-md mt-2">Sample for Signal implementation: </h5>
+            <div class="mt-2 inline-block mr-3">
+              <span class="text-slate-400">Counter Value (Primitive): </span>
+              <span class="text-blue-400">{{counterSignal()}}</span>
+            </div>
+            <button class="rounded border-1 border-slate-200 p-1 px-2 bg-purple-300 hover:bg-purple-500 hover:cursor-pointer hover:text-white inline-block" (click)="increment()">Increment</button><br/>
+            <div class="mt-2 inline-block mr-3">
+              <span class="text-slate-400">Current User (Object):</span>
+              <span class="text-blue-400"> {{(this.translations().name)}} of age {{this.translations().age}}</span></div>
+            <button class="rounded border-1 border-slate-200 p-1 px-2 bg-purple-300 hover:bg-purple-500 hover:cursor-pointer hover:text-white inline-block" (click)="changeUser()">Update User</button>
+
+            <h5 class="font-bold text-md mt-2">Sample for Derived Signal implementation: </h5>
+            <div class="mt-2 inline-block mr-3">
+              <span class="text-slate-400">Counter Current Value : </span>
+              <span class="text-blue-400">{{derivedCounterSignal()}}</span>
+            </div>
+          </div>
+          <div class="w-[50%]">
+            <h5 class="font-bold text-md mt-2">Sample for effect implementation: </h5>
+            <div class="mt-2 inline-block mr-3">
+              Effect handles actions like saving and not to handle UI change, so open the console log to see the logs on change of signal and effect being triggered
+            </div>
+          </div>
+        </div>
+        <div class="border-1 border-slate-200 bg-slate-100 p-2 my-1 flex flex-col md:flex-row justify-center">
+          <ul class="list-disc ml-5 border-r-1 border-slate-300 pr-4 w-[50%] ">
             <li>E.g. In the ts file declared a Signal => counter:number = signal(0);</li>
             <li>In the html template the signal should be called as a function =>   <span>&#123;&#123; counter() &#125; &#125;</span></li>
             <li>Signals can be modified using set or update API</li>
             <li>In case the signal is associated with array / object, never modify the properties directly and use set or update APIs</li>
             <li>To make a signal readonly use asReadOnly API</li>
-            <li>A derived signal can be created using compute API. This compute API gets triggered whenever
-              the signal linked to it gets updated. A derived signal is always readonly and cannot have
-              a set or update API
+            <li>A derived signal can be created using computed API. This computed API computes a derived signal whenever the signal linked to it gets updated. A derived signal is always readonly and cannot have a set or update API
             </li>
+          </ul>
+          <ul class="list-disc ml-5 w-[50%]">
+            <li>effects are created ideally inside a constructor</li>
+            <li>effects are called whenever the associated signals change or update</li>
+            <li>effects are functions inside which you implement activities like saving data to db / store / localstorage</li>
+            <li>signals should not allowed to be modified inside an effect. In case this behavior has to be overridden then pass parameter &#123;allowSignalWrites: true&#125; to effect function</li>
           </ul>
         </div>
       </div>
@@ -251,6 +282,9 @@
       }
       @case('alphNum-drctv'){
         <img src="https://dmjgo93cthk6w.cloudfront.net/directive_sample.png" class="p-3 border-1"/>
+      }
+      @case('signals'){
+        <img src="https://dmjgo93cthk6w.cloudfront.net/signals.png" class="p-3 border-1"/>
       }
       @default {
 
